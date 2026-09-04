@@ -31,6 +31,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/aos.css" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
+        <link rel="stylesheet" href="/css/mobile.css" />
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" sizes="any" />
       </head>
       <body suppressHydrationWarning>

@@ -1,0 +1,170 @@
+/* =====================================================
+   UNION TRUCKING - COMPLETE MOBILE OVERRIDE
+   Replaces all conflicting responsive rules
+   ===================================================== */
+
+/* ===== TABLET: 768px - 991px ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+    .ca-slider-3 { height: auto !important; min-height: 500px; padding-bottom: 40px; }
+    .ca-hero-content-3 { padding-top: 160px !important; padding-bottom: 200px; }
+    .ca-slider-heading { font-size: 38px !important; line-height: 50px !important; }
+    .ca-slider-img-3 { width: 45% !important; bottom: 0 !important; }
+    .ca-section-title { font-size: 30px !important; line-height: 40px !important; }
+}
+
+/* ===== MOBILE: max 767px ===== */
+@media (max-width: 767px) {
+
+    /* GLOBAL */
+    html, body { overflow-x: hidden !important; width: 100% !important; }
+    * { box-sizing: border-box !important; }
+    img { max-width: 100% !important; height: auto !important; }
+
+    /* NAVBAR */
+    .ca-logo img { max-width: 85px !important; height: auto !important; }
+
+    /* HERO SLIDER - Fix the 784px hardcoded height */
+    .ca-slider-3 {
+        height: auto !important;
+        min-height: unset !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .ca-hero-content-3 {
+        padding-top: 100px !important;
+        padding-bottom: 30px !important;
+        text-align: center !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+    .ca-slider-heading {
+        font-size: 24px !important;
+        line-height: 34px !important;
+        font-weight: 700 !important;
+    }
+    .ca-section-subtitle { font-size: 12px !important; }
+    .ca-hero-content-3 p { font-size: 14px !important; line-height: 24px !important; padding-bottom: 16px !important; }
+    .hero3-btn {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+    .ca-sec-primary-3 { margin-left: 0 !important; margin-top: 0 !important; }
+
+    /* Hide decorative shapes on mobile */
+    .ca-slider-3-shape,
+    .ca-line-shape3,
+    .ca-overlay-shape3,
+    .ca-dot-shape { display: none !important; }
+
+    /* Truck image - make it flow naturally below text */
+    .ca-slider-img-3 {
+        position: relative !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 20px 30px !important;
+    }
+    .ca-slider-img-3 img {
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+    /* Override the slick-active animation for mobile */
+    .ca-slider-3.slick-active .ca-slider-img-3 img {
+        transform: none !important;
+    }
+
+    /* SECTION TITLES */
+    .ca-section-title {
+        font-size: 24px !important;
+        line-height: 34px !important;
+    }
+
+    /* SECTION PADDING */
+    .pt-100 { padding-top: 50px !important; }
+    .pb-100 { padding-bottom: 50px !important; }
+    .pt-80 { padding-top: 40px !important; }
+    .pb-80 { padding-bottom: 40px !important; }
+    .mb-30 { margin-bottom: 20px !important; }
+
+    /* ABOUT SECTION */
+    .ca-ab-content3 { margin-left: 0 !important; margin-top: 20px; }
+    .ca-about-3-img { text-align: center; }
+
+    /* STATS / HOVER BOXES */
+    .ca-abo-hover-box { margin-bottom: 16px; }
+    .ca-abo-hover-title { font-size: 26px !important; }
+
+    /* SERVICES ACCORDION */
+    .ca-expand-title a { font-size: 15px !important; line-height: 24px !important; }
+
+    /* COUNTER SECTION */
+    .ca-counter-3 { 
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .ca-counter-area-3 {
+        padding: 10px !important;
+        border: none !important;
+        text-align: center !important;
+        width: 50% !important;
+    }
+    .ca-counter-title { font-size: 32px !important; }
+
+    /* PROJECTS GRID */
+    .ca-portfolio-3-item { margin-bottom: 20px; }
+    .ca-portfolio-3-item img { height: 220px !important; object-fit: cover !important; width: 100% !important; }
+
+    /* WORKING PROCESS */
+    .ca-work-icon-box { text-align: center; margin-bottom: 30px; }
+
+    /* TESTIMONIALS */
+    .ca-testimonial-card-3 { padding: 16px !important; }
+
+    /* BLOG */
+    .ca-blog-title-3 { font-size: 16px !important; line-height: 25px !important; }
+
+    /* CTA SECTION */
+    .ca-section-title.cta-title-1 { font-size: 22px !important; line-height: 32px !important; text-align: center !important; }
+    .ca-btn-cta-3 { text-align: center !important; display: block !important; margin-top: 16px; }
+
+    /* FOOTER */
+    .ca-footer-widget { margin-bottom: 30px; }
+    .ca-footer-logo img { max-width: 90px !important; }
+    .ca-ft-area { padding: 30px 15px !important; }
+    .copry-right-text, .copy-right-menu { text-align: center !important; }
+    .widget-3, .widget-4 { margin-left: 0 !important; }
+
+    /* CONTACT PAGE */
+    .contact-page__google-map { height: 280px !important; }
+    .ca-location-icbox { display: flex; flex-direction: column; gap: 12px; }
+    .ca-conatct-form1 { padding: 20px 12px !important; }
+
+    /* BREADCRUMB */
+    .ca-breadcrumb-area { padding: 100px 0 40px !important; }
+    .ca-breadcrumb-title { font-size: 26px !important; line-height: 36px !important; }
+
+    /* BACK TO TOP BTN */
+    #topBtn3 { right: 15px !important; bottom: 15px !important; }
+
+    /* SLICK DOTS */
+    .ca-slider-active-3 .slick-dots { display: none !important; }
+}
+
+/* ===== SMALL PHONES: max 400px ===== */
+@media (max-width: 400px) {
+    .ca-slider-heading { font-size: 20px !important; line-height: 30px !important; }
+    .ca-section-title { font-size: 20px !important; line-height: 30px !important; }
+    .ca-btn-primary-3 { font-size: 12px !important; padding: 10px 16px !important; }
+    .ca-logo img { max-width: 70px !important; }
+    .ca-counter-area-3 { width: 100% !important; }
+}
