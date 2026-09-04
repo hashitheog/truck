@@ -6,23 +6,26 @@ export default function Loader() {
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
+        const startTime = Date.now();
+        const minLoaderTime = 1200; // Force loader to show for at least 1.2 seconds
+
         const handleLoad = () => {
-            // Start fading out only AFTER everything is downloaded
-            setFade(true);
+            const timeElapsed = Date.now() - startTime;
+            const timeRemaining = Math.max(0, minLoaderTime - timeElapsed);
+
             setTimeout(() => {
-                setLoading(false);
-            }, 500);
+                setFade(true);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 500); // 500ms fade transition
+            }, timeRemaining);
         };
 
         if (document.readyState === 'complete') {
-            // If already loaded, delay just a tiny bit for smoothness
-            setTimeout(handleLoad, 300);
+            handleLoad();
         } else {
-            // Wait for the entire window (images, scripts) to finish loading
             window.addEventListener('load', handleLoad);
-            
-            // Fallback in case window.onload never fires or is blocked
-            const fallbackTimer = setTimeout(handleLoad, 5000);
+            const fallbackTimer = setTimeout(handleLoad, 8000); // Max wait 8 seconds
 
             return () => {
                 window.removeEventListener('load', handleLoad);
