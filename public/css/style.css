@@ -7375,3 +7375,29 @@ button.ca-btn-primary.ca-btn-primary-2 span {
 
 .ca-slider-img-3 { bottom: 0px !important; }
 
+@media (max-width: 767px) {
+    .ca-slider-img-3,
+    .ca-slider-3-shape,
+    .ca-line-shape3,
+    .ca-overlay-shape3,
+    .ca-about-img-3,
+    .ca-team-img,
+    .ca-work-ic-box-img,
+    .ca-test-3-user-img {
+        display: none !important;
+    }
+    
+    /* Make project text always visible and image hidden */
+    .ca-project-img {
+        display: none !important;
+    }
+    .ca-project-hover-item1 {
+        position: relative !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        top: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+}
