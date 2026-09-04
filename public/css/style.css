@@ -4326,7 +4326,7 @@ h4.ca-rat {
     padding-bottom: 7px;
 }
 
-.ca-test-3-user-img {
+.ca-test-3-user-img, .expand-slide-img {
     margin-right: 16px;
 }
 
@@ -7383,7 +7383,7 @@ button.ca-btn-primary.ca-btn-primary-2 span {
     .ca-about-img-3,
     .ca-team-img,
     .ca-work-ic-box-img,
-    .ca-test-3-user-img {
+    .ca-test-3-user-img, .expand-slide-img {
         display: none !important;
     }
     
