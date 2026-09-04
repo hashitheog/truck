@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useEffect, useState } from 'react';
 
 export default function Loader() {
@@ -6,20 +6,29 @@ export default function Loader() {
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
-        // Start fading out after 600ms
-        const fadeTimer = setTimeout(() => {
+        const handleLoad = () => {
+            // Start fading out only AFTER everything is downloaded
             setFade(true);
-        }, 600);
-
-        // Completely remove from DOM after fade completes
-        const removeTimer = setTimeout(() => {
-            setLoading(false);
-        }, 1100);
-
-        return () => {
-            clearTimeout(fadeTimer);
-            clearTimeout(removeTimer);
+            setTimeout(() => {
+                setLoading(false);
+            }, 500);
         };
+
+        if (document.readyState === 'complete') {
+            // If already loaded, delay just a tiny bit for smoothness
+            setTimeout(handleLoad, 300);
+        } else {
+            // Wait for the entire window (images, scripts) to finish loading
+            window.addEventListener('load', handleLoad);
+            
+            // Fallback in case window.onload never fires or is blocked
+            const fallbackTimer = setTimeout(handleLoad, 5000);
+
+            return () => {
+                window.removeEventListener('load', handleLoad);
+                clearTimeout(fallbackTimer);
+            };
+        }
     }, []);
 
     if (!loading) return null;
@@ -79,4 +88,3 @@ export default function Loader() {
         </>
     );
 }
-
