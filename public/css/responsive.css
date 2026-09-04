@@ -1456,3 +1456,111 @@
     }
 
 }
+
+/* ============================================
+   UNION TRUCKING - MOBILE FIRST FIXES
+   ============================================ */
+
+/* ---- GLOBAL ---- */
+@media (max-width: 767px) {
+    * { box-sizing: border-box; }
+    body { overflow-x: hidden; }
+    img { max-width: 100%; height: auto; }
+    br { display: none; }
+
+    /* ---- NAVBAR ---- */
+    .ca-logo img { max-width: 90px !important; }
+    .header-area-3 .container.header-3 { padding: 12px 16px; }
+
+    /* ---- HERO SLIDER ---- */
+    .ca-slider-3 { min-height: 500px; padding-bottom: 20px; }
+    .ca-hero-content-3 { padding-top: 120px !important; padding-bottom: 180px; text-align: center; }
+    .ca-slider-heading { font-size: 26px !important; line-height: 36px !important; }
+    .ca-section-subtitle { font-size: 13px; }
+    .ca-slider-img-3 { 
+        position: relative !important; 
+        width: 100% !important; 
+        text-align: center;
+        bottom: 0 !important;
+        right: 0 !important;
+        margin-top: 20px;
+    }
+    .ca-slider-img-3 img { width: 90% !important; margin: 0 auto; }
+    .hero3-btn { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .ca-btn-primary-3, .ca-sec-primary-3 { margin: 0 !important; }
+    .ca-slider-3-shape { display: none !important; }
+    .ca-line-shape3 { display: none !important; }
+    .ca-overlay-shape3 { display: none !important; }
+
+    /* ---- ABOUT SECTION ---- */
+    .ca-ab-content3 { margin-left: 0 !important; text-align: center; }
+    .ca-section-title { font-size: 26px !important; line-height: 36px !important; }
+    .ca-about-icon { flex-direction: column; }
+    .ca-abo-hover-title { font-size: 22px !important; }
+
+    /* ---- SERVICE SECTION ---- */
+    .ca-ser-icon-box { margin-bottom: 20px; }
+    .ca-iner-servics { padding: 40px 0 !important; }
+
+    /* ---- COUNTER SECTION ---- */
+    .ca-counter-3 { display: block !important; text-align: center; padding: 20px; }
+    .ca-counter-area-3 { padding: 0 !important; border: none !important; }
+    .ca-counter-title { font-size: 36px !important; }
+
+    /* ---- PROJECTS SECTION ---- */
+    .ca-portfolio-3-item img { height: 220px !important; object-fit: cover; width: 100%; }
+    .ca-project-hov-content { padding: 16px; }
+    .ca-project-hov-title a { font-size: 16px; }
+
+    /* ---- WORKING PROCESS ---- */
+    .ca-work-icon-box { margin-bottom: 24px; text-align: center; }
+
+    /* ---- TESTIMONIALS ---- */
+    .ca-testimonial-card-3 { padding: 20px !important; }
+    .ca-test-3-user-name h4 { font-size: 16px; }
+
+    /* ---- BLOG SECTION ---- */
+    .ca-blog-title-3 { font-size: 17px !important; line-height: 26px !important; }
+    .ca-team-img img { height: 220px !important; object-fit: cover; width: 100%; }
+
+    /* ---- CTA SECTION ---- */
+    .ca-cta-content h2 { font-size: 22px !important; line-height: 32px !important; text-align: center; }
+    .ca-btn-cta-3 { text-align: center !important; margin-top: 20px; }
+
+    /* ---- FOOTER ---- */
+    .ca-ft-area { padding: 30px 16px !important; }
+    .ca-footer-widget { margin-bottom: 30px; }
+    .ca-footer-logo img { max-width: 100px !important; }
+    .copry-right-text { text-align: center; font-size: 13px; }
+    .copy-right-menu { text-align: center !important; }
+
+    /* ---- CONTACT PAGE ---- */
+    .ca-maps iframe, .contact-page__google-map { height: 280px !important; width: 100%; }
+    .ca-conatct-form1 input, .ca-conatct-form1 textarea { width: 100% !important; }
+    .ca-location-icbox { flex-direction: column; gap: 10px; }
+
+    /* ---- BREADCRUMB ---- */
+    .ca-breadcrumb-title { font-size: 28px !important; line-height: 36px !important; }
+    .ca-breadcrumb-area { padding-top: 110px !important; padding-bottom: 50px !important; }
+
+    /* ---- GENERAL SPACING ---- */
+    .pt-100 { padding-top: 50px !important; }
+    .pb-100 { padding-bottom: 50px !important; }
+    .pt-80 { padding-top: 40px !important; }
+    .pb-80 { padding-bottom: 40px !important; }
+
+    /* ---- EXPAND SERVICE ACCORDION ---- */
+    .ca-expand-title a { font-size: 16px !important; }
+    .ca-expand-content { padding: 12px !important; }
+
+    /* ---- TOP BACK BUTTON ---- */
+    #topBtn3 { bottom: 20px !important; right: 20px !important; }
+}
+
+/* ---- SMALL PHONES (under 400px) ---- */
+@media (max-width: 400px) {
+    .ca-slider-heading { font-size: 22px !important; line-height: 30px !important; }
+    .ca-section-title { font-size: 22px !important; line-height: 30px !important; }
+    .ca-btn-primary-3 { padding: 10px 18px !important; font-size: 13px !important; }
+    .ca-logo img { max-width: 75px !important; }
+}
