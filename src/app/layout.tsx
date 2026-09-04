@@ -7,6 +7,13 @@ import Footer from '@/components/Footer';
 
 import FooterScripts from '@/components/FooterScripts';
 
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Union Trucking - Union Trucking LLC",
   description: "Union Trucking LLC",
@@ -19,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/all.css" />
         <link rel="stylesheet" href="/css/magnific-popup.css" />
@@ -31,7 +38,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" sizes="any" />
-      </head>
+      
       <body suppressHydrationWarning>
         <Loader />
         
@@ -44,4 +51,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 
