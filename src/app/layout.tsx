@@ -30,7 +30,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/aos.css" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
-        <link rel="shortcut icon" href="/img/icon/ca-fav-3.svg" />
+        <link rel="shortcut icon" href="/img/logo/union-trucking-logo.png" />
       </head>
       <body suppressHydrationWarning>
         <Loader />
